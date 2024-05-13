@@ -211,7 +211,7 @@ pub struct PotParametersChange {
 
 /// An consensus log item for Subspace.
 #[derive(Debug, Decode, Encode, Clone, PartialEq, Eq)]
-enum ConsensusLog {
+pub enum ConsensusLog {
     /// Number of iterations for proof of time per slot, corresponds to slot that directly follows
     /// parent block's slot and can change before slot for which block is produced.
     #[codec(index = 0)]
